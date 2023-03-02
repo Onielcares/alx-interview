@@ -52,3 +52,28 @@ def boundary(grid, i, j):
         bound_3.add((i, j))
     elif boundaries == 4:
         bound_4.add((i, j))
+
+
+def island_perimeter(grid):
+    """
+    Calculate and return perimeter of island in the grid
+    Grid is a rectangular grid where 0s represent water and 1s represent land
+    Each cell is a square with a side length of 1
+    There is only one island
+    Args:
+        grid [list] : 2d list of ints either 0 or 1
+    Return:
+       perimeter of island
+    """
+    if grid == []:
+        return 0
+    l = len(grid)
+    w = len(grid[0])
+    for i in range(l):
+        for j in range(w):
+            if grid[i][j] == 1:
+                boundary(grid, i, j)
+                if len(bound_4) != 0:
+                    return 4
+    perimeter = (len(bound_3) * 3) + (len(bound_2) * 2) + (len(bound_1))
+    return perimeter
