@@ -8,3 +8,5 @@ This is a REPO for all ALX Task.
 - Log Parsing
 - UTF8 Validation
 - NQueens
+- StarWars
+- Rotate 2D Matrix
