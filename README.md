@@ -10,3 +10,5 @@ This is a REPO for all ALX Task.
 - NQueens
 - StarWars
 - Rotate 2D Matrix
+- Making Change
+- Island Perimeter
