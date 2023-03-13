@@ -6,3 +6,5 @@ This is a REPO for all ALX Task.
 - Lockboxes
 - Minimum Operations
 - Log Parsing
+- UTF8 Validation
+- NQueens
